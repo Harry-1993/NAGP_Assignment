@@ -4,6 +4,6 @@ metadata:
   name: aggregator-config
   namespace: default
 data:
-  user.url: http://user-internal-service-pod-qgkdj/user/
-  orders.url: http://orders-internal-service-pod-dcgzn/orders/
+  user.url: http://user-service
+  orders.url: http://orders-service
   

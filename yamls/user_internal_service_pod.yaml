@@ -7,5 +7,5 @@ metadata:
 spec:
   containers:
   - name: user-internal-service-container
-    image: harsimran1993/userservice
+    image: harsimran1993/userservice:v02
     

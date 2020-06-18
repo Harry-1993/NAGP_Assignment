@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: order-details
-        image: harsimran1993/aggregateservice
+        image: harsimran1993/aggregateservice:v02
         ports:
         - containerPort: 8080
         env:
