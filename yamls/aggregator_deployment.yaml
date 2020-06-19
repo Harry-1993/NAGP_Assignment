@@ -5,7 +5,7 @@ metadata:
   labels:
     app: order-details
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: order-details
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: order-details
-        image: harsimran1993/aggregateservice:v02
+        image: harsimran1993/aggregateservice:v03
         ports:
         - containerPort: 8080
         env:

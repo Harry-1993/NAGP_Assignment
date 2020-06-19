@@ -7,5 +7,5 @@ metadata:
 spec:
   containers:
   - name: orders-internal-service-container
-    image: harsimran1993/ordersservice:v02
+    image: harsimran1993/ordersservice:v03
     

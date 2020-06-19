@@ -4,6 +4,6 @@ metadata:
   name: aggregator-config
   namespace: default
 data:
-  user.url: http://user-service
-  orders.url: http://orders-service
+  user.url: http://user-service:8001/
+  orders.url: http://orders-service:8002/
   
