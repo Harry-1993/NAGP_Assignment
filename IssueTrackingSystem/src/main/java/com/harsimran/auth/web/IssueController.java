@@ -27,7 +27,7 @@ public class IssueController {
 	}
 	
 	@PostMapping("/addIssues")
-	public String createIssue(@ModelAttribute("issue") Issue issue) {
+	public String createIssue(@ModelAttribute("issueForm") Issue issue) {
 		issueServiceImpl.saveIssue(issue);
 		return "redirect:/viewIssues";	
 	}
@@ -48,7 +48,7 @@ public class IssueController {
 	@GetMapping("/edit")
 	public String editIssue(@RequestParam("id") String id, Map<String, Object> model, Issue issue1) {
 		Issue issue = issueServiceImpl.updateIssue(issue1);
-		model.put("issue", issue);
+		model.put("issueForm", issue);
 		return "addIssues";
 	}
 }

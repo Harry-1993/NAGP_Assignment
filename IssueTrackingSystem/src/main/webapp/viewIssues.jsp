@@ -24,7 +24,7 @@ td, th {
 <body style="background-color: #FFFFE0;">
 
 	<div style="margin-top: 50px; margin-left: 200px; height: 50px;">
-		<h2>Employee List</h2>
+		<h2>Issue List</h2>
 	</div>
 	<table style="margin-top: 0px; margin-left: 100px;">
 		<tr>
