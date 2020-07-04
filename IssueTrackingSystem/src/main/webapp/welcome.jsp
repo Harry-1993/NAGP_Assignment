@@ -25,10 +25,10 @@
 
 		</c:if>
 		<h4 class="text-center">
-			<a href="${contextPath}/addIssues.jsp">Create an issue</a>
+			<a href="${contextPath}/addIssue">Create an issue</a>
 		</h4>
 		<h4 class="text-center">
-			<a href="${contextPath}/viewIssues.jsp">View Created Issues</a>
+			<a href="${contextPath}/viewIssues">View Created Issues</a>
 		</h4>
 
 	</div>

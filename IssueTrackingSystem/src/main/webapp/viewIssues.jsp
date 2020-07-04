@@ -28,15 +28,18 @@ td, th {
 	</div>
 	<table style="margin-top: 0px; margin-left: 100px;">
 		<tr>
+			<th>S.No</th>
 			<th>Issue Name</th>
 			<th>Subject</th>
 			<th>Description</th>
 			<th>Issue Type</th>
-			<th></th>
-			<th></th>
+			<th>Edit</th>
+			<th>Delete</th>
+
 		</tr>
 		<c:forEach items="${issueList}" var="issue">
 			<tr>
+				<td>${issue.id}</td>
 				<td>${issue.issueName}</td>
 				<td>${issue.subject}</td>
 				<td>${issue.description}</td>
@@ -45,13 +48,16 @@ td, th {
 				<td>
 					<form action="/edit?id=${issue.id}" method="post">
 						<input type="submit" value="Edit"
-							style="background: none; border: 0px; cursor: pointer;" />
+							style="background: none; border: 0px; cursor: pointer;" /> <input
+							type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" />
 					</form>
 				</td>
 
 				<td>
 					<form action="/delete?id=${issue.id}" method="post">
-						<input type="submit" value="Delete"
+						<input type="hidden" name="${_csrf.parameterName}"
+							value="${_csrf.token}" /> <input type="submit" value="Delete"
 							style="background: none; border: 0px; cursor: pointer;" />
 					</form>
 				</td>

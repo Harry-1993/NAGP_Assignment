@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -22,6 +23,7 @@ public class Issue {
 
 	private String description;
 
+	
 	public Long getId() {
 		return id;
 	}
@@ -61,5 +63,20 @@ public class Issue {
 	public void setIssueType(IssueType issueType) {
 		this.issueType = issueType;
 	}
+	
+	public Issue() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Issue(Long id, String issueName, IssueType issueType, String subject, String description) {
+		super();
+		this.id = id;
+		this.issueName = issueName;
+		this.issueType = issueType;
+		this.subject = subject;
+		this.description = description;
+	}
+	
+	
 
 }

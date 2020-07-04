@@ -31,6 +31,7 @@ public class IssueServiceImpl implements IssueService {
 		return issueRepo.findById((long) id).orElse(null);
 
 	}
+	
 
 	public String deleteIssue(int id) {
 		issueRepo.deleteById((long) id);

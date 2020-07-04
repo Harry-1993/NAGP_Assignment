@@ -20,6 +20,7 @@ public class User {
     @ManyToMany
     private Set<Role> roles;
 
+    
     public Long getId() {
         return id;
     }
@@ -59,4 +60,7 @@ public class User {
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
+
+    
 }
