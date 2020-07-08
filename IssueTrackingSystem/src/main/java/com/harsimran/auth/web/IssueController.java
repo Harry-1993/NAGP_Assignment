@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,7 @@ import com.harsimran.auth.model.IssueType;
 import com.harsimran.auth.service.IssueServiceImpl;
 
 @Controller
+@EnableCaching
 public class IssueController {
 	
 	@Autowired
